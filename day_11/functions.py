@@ -418,7 +418,6 @@ uniques_items, repeated_items = unique_items(sorted_input_list_items)
 print(f"La lista con los numeros únicos es {uniques_items}")
 print(f"La lista con los números repetidos es {repeated_items}")
 
-
 # Write a function which checks if all the items of the list are of the same data type.
 
 def tipos_de_dato(lista1):
@@ -446,32 +445,3 @@ print(tipos_de_dato(lista1))  # True
 print(tipos_de_dato(lista2))  # False
 print(tipos_de_dato(lista3))  # True
 print(tipos_de_dato(lista4))  # True
-
-# From this point on, functions are requested from Microsoft Copilot.
-
-# 1. Función para sumar dos números
-
-def suma(a, b):
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        return f"Valor introducido diferente a entero o decimal"
-    return a + b
-
-a = float(input("Introduce el valor de a: "))
-b = float(input("Introduce el valor de b: "))
-
-resultado_suma = suma(a, b)
-print(f"El resultado de la suma siendo a = {a} y b = {b} es: {round(resultado_suma, 2)}")
-
-# 2. Determinar si un numero es par o impar
-
-def verificar_par_o_impar(n):
-    if n < 0:
-        print(f"Número no valido, introduce otro")
-    elif n % 2 == 0:
-        print(f"El número {n} es par")
-    else:
-        print(f"El número {n} es impar")
-
-n = int(input("Introduce el valor de n: "))
-
-verificar_par_o_impar(n)
